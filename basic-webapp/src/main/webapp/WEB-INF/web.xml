@@ -1,0 +1,33 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file>config.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- context for global variable -->
+  <context-param> 
+  <param-name>n1</param-name>
+  <param-value>Rohit</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>Hello</servlet-name>
+  <jsp-file>/hello.jsp</jsp-file>
+  <!-- init for local variable -->
+  <init-param> 
+  <param-name>n1</param-name>
+  <param-value>100</param-value>
+  </init-param>
+  
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Hello</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
